@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - log in or sign up</title>
+
+    <!-- Link of CSS -->
+    <link rel="stylesheet" href="./CSS/index.css">
+
+    <!-- Import of Icon -->
+    <link rel="shortcut icon" href="./IMG/fb_icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div class="sub_main">
+            <div class="left_side">
+                <div class="fb_icon">
+                    <img src="./IMG/home_icon.svg" alt="facebook icon">
+                </div>
+                <div class="logins">
+                    <p class="recent">Recent Logins</p>
+                    <p>Click your picture or add an account.</p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="picture">
+                            <img src="./IMG/profile.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Eduardo</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="picture">
+                            <img src="./IMG/norvine.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Norvine</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="picture">
+                            <img src="./IMG/pro.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>BS Infotech</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="picture">
+                            <img src="./IMG/shiela.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Sheila</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="picture">
+                            <img src="./IMG/allen.jpg" alt="">
+                        </div>
+                        <div class="name">
+                            <p>Allen</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="picture" id="picture">
+                            <div class="add">+</div>
+                        </div>
+                        <div class="name">
+                            <p>Add Account</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_side">
+                <div class="form">
+                    <form id="logIN">
+                        <div class="input_container">
+                            <div class="holder">
+                            <input type="text" id="username" placeholder="Email or phone number">
+                            </div>  
+                            <div class="holder">
+                                <input type="password" id="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="button_container">
+                            <button type="button" id="login_button" onclick="login()">Log In</button>
+                        </div>
+                        <p>Forgot password?</p>
+                        <hr>
+                        <div class="create_button">
+                            <button type="button" id="create_button" >Create new account</button>
+                        </div>
+                    </form>
+                </div>
+                <p><b>Create a Page</b> for a celebrity, brand or business.</p>
+            </div>  
+        </div>
+    </div>
+    <div class="popup_container">
+        <div class="popup_register">
+              <form id="myForm" style="display: none;">
+                <div class="holder"><input type="text" id="reg_username" placeholder="Enter username"></div>
+                <div class="holder"><input type="password" id="reg_password" placeholder="Enter password"></div>
+                <div class="create_button"><button type="button" id="reg_button" onclick="saveRegistration()">Register</button></div>
+                <div class="x_button"><button type="button" id="close_button">X</button></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./JS/index.js"></script>
