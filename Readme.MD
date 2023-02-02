@@ -17,7 +17,7 @@ Backend: Node.js, Express, MongoDB
 Clone the repository to your local machine
 bash
 Copy code
-git clone https://github.com/tacorda/duplicate-facebook.git
+git clone https://github.com/tacorda015/DuplicateFacebook.git
 Install the required packages
 Copy code
 npm install
